@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling 🌏🌅</title>
+    <style>
+
+        .container{
+            max-width: 600%;
+            margin: 30px auto;
+            padding: 30px;
+            background: linear-gradient(90deg, #bfa9f7 0%, #f7b1c6 100%);
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;;
+        }
+        h1{
+            text-align: center;
+            color: #f65282;
+        }
+        h2{
+            text-align: center;
+
+        }
+        img{
+            margin: 10px auto;
+            padding: 150px auto;
+        }
+        p{
+            text-align: center;
+            line-height: 1.8;
+            font-size: 20px;
+            font-weight: 20px;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 50px;
+        }
+        .learn-more{
+            display: block;
+            margin-top: 0 auto;
+            text-decoration: none;
+            color: #f65282;
+            font-size: 11px;
+        }
+        .learn-more:hover{
+            text-decoration: underline;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            background: #f65282;
+            font-size: 18px;
+            color: #fff;
+            border: 2px solid #f65282;
+            border-radius: 20px;
+            padding: 10px 20px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            transition: all 200ms ease-in-out;
+        }
+        button:hover{
+            opacity: 0.9;
+            cursor:pointer
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class = "container">
+        <h1> 
+            I would like to travel one day!
+        </h1>
+        <h2>
+            The one location that I have in mind right now, is Thailand.🕌
+        </h2> <br>
+        <hr>
+        <img src="https://www.travelandleisure.com/thmb/BT0NbtsK80y_P6FkFQvUzeIwvsw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TAL-koh-phi-phi-PLACESTHAILAND1023-09b9d347b3cd4844b4ae19e4e06a9a6d.jpg" alt="Thailand">
+        <p>
+            The place is known for its incredible diversity & vibrant experiences. The thought of exploring the streets of Bangkok 
+            is rather exciting. <br> I picture myslef relaxing on pristine beaches of islands like Phuket,
+            or diving into the crystal-clear waters around the Similan Islands. <br>
+            Since I like food, I would also try the Thai cuisine, from street food delights to luxurious food just to 
+            tantalise my taste buds. 
+            <br> 
+            <br>
+            Moreover, the positive reviews of the place make it enticing to travel to the location!😀
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Thailand" target="_blank" class="learn-more">
+            <strong>
+                Click here to learn more about Thailand!
+            </strong>
+        </a> 
+        <br>
+        <br>
+        <button>
+            Book your holiday to Thailand!
+        </button>
+        <br>
+        <br>
+        <p class="footer">
+            This page was built by Asisipho Maliwa 💕
+        </p>
+
+    </div>
+    <script>
+        function bookNow(){
+            let name = prompt ("What is your name?");
+            let email = prompt ("What is your email address?");
+            let activity = prompt("What is the first thing you'll do when you get to Thailand?");
+            if (activity === "City Sightseeing Tour") {
+                alert("That's a great idea, to start of your holiday with a tour!😉");
+            } else{
+                alert("That sounds lovey!😄")
+            }
+
+            alert("Thank you " + name + "! We will be in touch by email, to confirm your booking. Meanwhile, you can do some packing while we sort out your trip. Oh,don't forget your suncreen!🌞");
+        }
+        let bookingButton = document.querySelector("button");
+        bookingButton.addEventListener("click", bookNow);
+        
+    </script>
+</body>
+</html>

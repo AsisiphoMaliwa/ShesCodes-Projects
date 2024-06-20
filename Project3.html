@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics Add-on Project</title>
+
+    <style>
+        body{
+            background: linear-gradient(90deg, #bfa9f7 0%, #f7b1c6 100% );
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        img{
+            max-width: 100%;
+        }
+        button{
+            display: block;
+            margin:0 auto;
+            padding: 10px 15px;
+            border: 1px solid #f7b1c6;
+            background: white;
+            font-size: 20px;
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        button:hover{
+            background: #f7b1c6;
+            cursor: pointer;
+        }
+        .container{
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .colorButton{
+            font-size: 15px;
+            background: black;
+            color: white;
+            padding: 5 8px;
+        }
+        .colorButton:hover{
+            color: black;
+            background: white;
+        }
+        footer{
+            text-align: center;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .Hiking{
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .Hiking:hover{
+            filter:contrast(80%);
+            transform: scale(1.1);
+        }
+        .grid{
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .grid img{
+            width:100%;
+            border-radius: 8px;
+            transition: all 150ms ease-in-out;
+        }
+        .grid img:hover{
+            transform: scale(2);
+        }
+        .dark{
+            background: radial-gradient(circle at 10% 20%, rgb(0, 52, 89) 0%, rgb(0, 168, 232) 90%);
+            color: white;
+        }
+        .dark .container{
+            background: rgb(255, 255, 255, 0.6);
+
+        }
+    </style>
+</head>
+<body class>
+    <div class="container">
+        <button class="colorButton">
+        Change Theme
+    </button>
+    <h1>
+        Hiking
+    </h1>
+    <h2>
+        My favorite hobby!
+    </h2>
+    <img src="https://mtsobek.imgix.net/2023/12/XrDHEm8n-North-America-Joshua-Tree-National-Park-Solo-Female-Hiker-Walking-on-Desert-Oasis-Trail.jpg?auto=compress%2Cformat&fit=scale&h=1025&ixlib=php-3.3.1&w=1536&wpsize=1536x1536" alt class="Hiking">
+        <div class="grid">
+            <img src="https://secretcapetown.co.za/wp-content/uploads/2020/04/Cape-Town-Table-Mountain-scaled.jpg" alt="Table Mountain">
+            <img src="https://insideguide.co.za/cape-town/app/uploads/2020/06/table-mountain-hiking-lockdown.jpg" alt="Sunrise">
+            <img src="https://www.kuoni.co.uk/alfredand/wp-content/uploads/2021/11/Table-Mountain-Hike-13-scaled-e1637579630494.jpg" alt="Goingup">
+            <img src="https://www.thesouthafrican.com/wp-content/uploads/2019/01/e91b8274-adobestock_225541147.jpeg" alt="CloudyHiking">
+        </div>
+
+    <br>
+    <p>
+        I enjoy hiking on Table Mountain because it offers a perfect blend of physical challenge and natural beauty. 
+        The trails are diverse, catering to different skill levels, and each journey provides a new perspective on the stunning landscapes. 
+        The sense of accomplishment upon reaching the summit, coupled with the awe-inspiring views of Cape Town and the ocean, is incredibly rewarding. 
+        Additionally, the serenity
+         and connection with nature I experience on the mountain trails rejuvenate my spirit and offer a refreshing escape from the hustle and bustle of daily life.
+    </p>
+    <button>
+        Let's go hiking!🌄⛺
+    </button>
+    </div>  
+    <footer>
+        This page was made by Asisipho Maliwa💕
+    </footer>
+    <script>
+        function changeColor(){
+            let body = document.querySelector("body");
+            if (body.classList.contains("dark")){
+                body.classList.remove("dark");
+            }else{
+                body.classList.add("dark");
+            }
+        }
+        let colorButton = document.querySelector(".colorButton");
+        colorButton.addEventListener("click", changeColor);
+    </script>
+</body>
+</html>
